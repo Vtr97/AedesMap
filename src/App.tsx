@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import MainRoutes from "./routes";
 
 const App: React.FC = () => {
-    return(
+    return (
         <div className="app">
-            <h1>Mapa de focos</h1>
+            <BrowserRouter>
+                <MainRoutes />
+            </BrowserRouter>
         </div>
     );
 };

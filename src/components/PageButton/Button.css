@@ -1,0 +1,18 @@
+.button{
+    border-radius: 12px;
+    padding: 10px 30px;
+    font-weight:500;
+    border-width: thin;
+    cursor: pointer;
+}
+
+.button-emphasized{
+    color: black;
+    border-color: black;
+    background-color: #ffd60A;
+}
+
+.button-normal{
+    color: white;
+    background: transparent;
+}
