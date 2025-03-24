@@ -1,5 +1,6 @@
 import "./Button.css";
 import React from "react";
+import styles from "./Button.module.css";
 
 interface ButtonProperties {
     variant?: "emphasized" | "normal";
@@ -13,7 +14,10 @@ const Button: React.FC<ButtonProperties> = ({
     onClick,
 }) => {
     return (
-        <button className={`button button-${variant}`} onClick={onClick}>
+        <button
+            className={styles[`button button-${variant}`]}
+            onClick={onClick}
+        >
             {children}
         </button>
     );

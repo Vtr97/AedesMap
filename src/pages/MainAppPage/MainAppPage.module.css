@@ -1,0 +1,13 @@
+.main-app-page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.map{
+    height: 90vh;
+    width: 100vw;
+    z-index: 2;
+}

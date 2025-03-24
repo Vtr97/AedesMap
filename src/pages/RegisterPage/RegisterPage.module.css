@@ -40,17 +40,17 @@
     color: white;
     background: transparent;
     text-align: left;
-    min-width: 80%;
+    min-width: 100%;
 }
 .register-form input::placeholder{
     background: transparent;
     text-align: left;
 }
 
-button{
+.register-page button{
     margin: auto;
     text-align: center;
-    min-width: 60%;
+    min-width: 100%;
 }
 
 .login-here {

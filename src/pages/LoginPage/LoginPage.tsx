@@ -19,16 +19,16 @@ const LoginPage: React.FC = () => {
                 </p>
                 <form className={styles["login-form"]}>
                     <input
-                        type="text"
+                        type="email"
                         placeholder="E-mail"
                         required
-                        className={styles.input} // Adicionei a classe input, assumindo que existe no CSS
+                        className={styles.input}
                     />
                     <input
-                        type="text"
+                        type="password"
                         placeholder="Senha"
                         required
-                        className={styles.input} // Adicionei a classe input, assumindo que existe no CSS
+                        className={styles.input}
                     />
                     <Button variant="emphasized">Entrar</Button>
                 </form>

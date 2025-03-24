@@ -4,18 +4,25 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 .header{
     margin: 10%;
 }
  .main{
+    width: 80%;
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
     gap: 10px;
     align-items: start;
 }
+
+.main h2{
+    flex:1;
+    text-align: start;
+}
+
 
 
 .explanation{
@@ -29,7 +36,7 @@
     align-items: center;
     text-align: center;
     gap: 10px;
-    min-width: 80%;
+    min-width: 100%;
 }
 
 .login-form input{
@@ -39,7 +46,7 @@
     color: white;
     background: transparent;
     text-align: left;
-    min-width: 80%;
+    min-width: 100%;
 }
 .login-form input::placeholder{
     background: transparent;
@@ -48,19 +55,26 @@
 
 .login-form button{
     margin-top: 20px;
+    min-width: 100%;
 }
 
-button{
+.login-page button{
     margin: 1px auto;
     text-align: center;
-    min-width: 60%;
 }
 
 .forgot{
     margin-bottom: 10px;
-    min-width: 80%;
+    min-width: 100%;
 }
 
+.forgot button{
+    min-width: 100%;
+}
+.no-account{
+    font-size: 12px;
+    align-self: center;
+}
 .no-account .link{
     margin-left: 10px;
     font-weight: bold;

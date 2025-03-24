@@ -8,9 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "preview": "vite preview",
-    "stylelint": "stylelint 'src/**/*.css'",
-    "stylelint:fix": "stylelint 'src/**/*.css' --fix"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.8.4",
@@ -40,8 +38,6 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "prettier": "^3.5.3",
-    "stylelint": "^16.16.0",
-    "stylelint-config-standard": "^37.0.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
