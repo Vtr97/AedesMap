@@ -1,0 +1,21 @@
+.map {
+    height: 90vh; 
+    width: 100%;
+    position: relative; 
+}
+
+.locate-button {
+    position: absolute; 
+    bottom: 2%; 
+    right: 2%; 
+    z-index: 1000; 
+    background-color: #001D3D; 
+    border-radius: 50%;
+    cursor: pointer; 
+    width: 2rem;
+    height: 2rem;
+}
+
+.locateButton:hover {
+    background-color: #003566;
+}
