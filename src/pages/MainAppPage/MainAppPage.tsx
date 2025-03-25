@@ -2,7 +2,30 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "../../../node_modules/leaflet/dist/leaflet.css";
 import styles from "./MainAppPage.module.css";
 import NavBar from "../../components/NavBar/NavBar";
+import UserMenu from "../../components/UserMenu/UserMenu";
+import { useState } from "react";
+import ReportMenu from "../../components/ReportMenu/ReportMenu";
+import UserReportMenu from "../../components/UserReportMenu/UserReportMenu";
+
 const MainAppPage: React.FC = () => {
+    const [activeMenu, setActiveMenu] = useState<string | null>(null);
+    const toggleMenu = (menuType: string) => {
+        setActiveMenu(activeMenu === menuType ? null : menuType);
+    };
+    const getMenuContent = (menuType: string) => {
+        switch (menuType) {
+            case "report":
+                return <ReportMenu />;
+                break;
+            case "userReports":
+                return <UserReportMenu />;
+                break;
+            default:
+                break;
+        }
+    };
+    const activeContent = activeMenu ? getMenuContent(activeMenu) : null;
+
     return (
         <div className={styles["main-app-page"]}>
             <header className={styles.header}>
@@ -26,11 +49,11 @@ const MainAppPage: React.FC = () => {
                     </Marker>
                 </MapContainer>
                 <div className={styles.nav}>
-                    <NavBar />
+                    <NavBar toggleMenu={toggleMenu} />
+                    <UserMenu menuType={activeMenu} content={activeContent} />
                 </div>
             </main>
         </div>
     );
 };
-
 export default MainAppPage;
