@@ -1,6 +1,6 @@
-import "./Button.css";
 import React from "react";
 import styles from "./Button.module.css";
+
 
 interface ButtonProperties {
     variant?: "emphasized" | "normal";
@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProperties> = ({
 }) => {
     return (
         <button
-            className={styles[`button button-${variant}`]}
+            className={`${styles.button} ${styles[`button-${variant}`]}`}
             onClick={onClick}
         >
             {children}

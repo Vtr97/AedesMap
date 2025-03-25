@@ -1,0 +1,15 @@
+.report-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+    gap: 1rem;
+}
+.buttons{
+    width: 100%;
+}
+
+.buttons button{
+    width: 100%;
+}

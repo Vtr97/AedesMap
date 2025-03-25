@@ -30,7 +30,12 @@ const LoginPage: React.FC = () => {
                         required
                         className={styles.input}
                     />
-                    <Button variant="emphasized">Entrar</Button>
+                    <Button
+                        variant="emphasized"
+                        onClick={() => navigate("/app")}
+                    >
+                        Entrar
+                    </Button>
                 </form>
                 <div className={styles.forgot}>
                     <Button variant="normal">Esqueci minha senha</Button>

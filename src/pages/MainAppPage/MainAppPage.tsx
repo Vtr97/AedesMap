@@ -1,6 +1,7 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "../../../node_modules/leaflet/dist/leaflet.css";
 import styles from "./MainAppPage.module.css";
+import NavBar from "../../components/NavBar/NavBar";
 const MainAppPage: React.FC = () => {
     return (
         <div className={styles["main-app-page"]}>
@@ -24,6 +25,9 @@ const MainAppPage: React.FC = () => {
                         </Popup>
                     </Marker>
                 </MapContainer>
+                <div className={styles.nav}>
+                    <NavBar />
+                </div>
             </main>
         </div>
     );

@@ -1,5 +1,6 @@
 .app{
     min-height: 100vh;
-    background-color: #001D3D;                                                                                                                                                                               
-    box-sizing: border-box;
+    background-color: #001D3D;
+    display: flex; 
+    flex-direction: column                                                                                                                                                                            
 }
