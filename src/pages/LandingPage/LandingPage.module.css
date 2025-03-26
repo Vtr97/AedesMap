@@ -44,5 +44,17 @@
     min-width: 70%;
 }
 
+@media (min-width: 720px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 0.5fr auto 0.5fr;
+    }
+    .col_center{
+        grid-column: 2
 
-
+    }
+    .buttons{
+        max-width: 50%;
+        min-width: 50%;
+    }
+}

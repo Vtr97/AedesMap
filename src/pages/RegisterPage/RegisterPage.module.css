@@ -66,3 +66,20 @@
 
 
 
+@media (min-width: 720px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 0.2fr auto 0.2fr;
+    }
+    .col_center{
+        grid-column: 2
+
+    }
+    .main{
+        align-items: center;
+        margin-left: 0px;
+    }
+    .header{
+        margin: 5%;
+    }
+}

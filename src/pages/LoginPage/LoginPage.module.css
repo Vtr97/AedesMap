@@ -80,3 +80,30 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+@media (min-width: 720px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 0.2fr auto 0.2fr;
+    }
+    .col_center{
+        grid-column: 2
+
+    }
+    .login-form input{
+        min-width: 50%;
+    }
+    .login-form button{
+        min-width: 50%;
+    }
+    .forgot{
+        min-width: 50%;
+    }
+    
+    .forgot button{
+        min-width: 50%;
+    }
+    .main{
+        align-items: center;
+    }
+}
