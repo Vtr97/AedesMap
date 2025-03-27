@@ -9,10 +9,10 @@ const location = "rua teste 123 - Bairro Teste, Santo andre- SP";
 const description = "água parada embaixo de um pneu";
 
 const ReportMenu: React.FC = () => {
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState(true);
 
     const reportConfirm = () => {
-        return active ? setActive(false):setActive(true);
+        return active ? setActive(false) : setActive(true);
     };
 
     const Menu = () => {
