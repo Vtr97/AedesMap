@@ -5,6 +5,16 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FaPen } from "react-icons/fa";
 import { GiConfirmed } from "react-icons/gi";
 
+
+interface Report{
+    location:string,
+    description?:string
+}
+
+const UserReport:React.FC<Report[]>= (reports) =>{
+
+};
+
 const location = "rua teste 123 - Bairro Teste, Santo andre- SP";
 const description = "água parada embaixo de um pneu";
 

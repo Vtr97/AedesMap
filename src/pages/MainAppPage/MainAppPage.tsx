@@ -6,6 +6,7 @@ import { useState } from "react";
 import ReportMenu from "../../components/ReportMenu/ReportMenu";
 import UserReportMenu from "../../components/UserReportMenu/UserReportMenu";
 import Map from "../../components/Map/Map";
+import RegionMenu from "../../components/RegionMenu/RegionMenu";
 
 const MainAppPage: React.FC = () => {
     const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -16,12 +17,12 @@ const MainAppPage: React.FC = () => {
         switch (menuType) {
             case "report":
                 return <ReportMenu />;
-                break;
+
             case "userReports":
                 return <UserReportMenu />;
-                break;
-            default:
-                break;
+
+            case "focos":
+                return <RegionMenu />;
         }
     };
     const activeContent = activeMenu ? getMenuContent(activeMenu) : null;
